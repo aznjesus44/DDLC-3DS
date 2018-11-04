@@ -47,7 +47,7 @@ ROMFS           := game/
 APP_TITLE       := DDLC-3DS
 APP_AUTHOR      := LukeeGD
 APP_TITLEID     := 0xDDFC
-APP_VERSION     := 0.3.2
+APP_VERSION     := 0.5.0
 APP_DESCRIPTION := An unofficial DDLC port for the 3DS!
 
 ICON            := icon.png

@@ -5,7 +5,7 @@ require 'menu'
 require 'scripts/script'
 
 function love.load() 
-	dversion = 'v0.5.0'
+	dversion = 'v0.5.0-3'
 	dvertype = 'Release'
 	
 	lg.setBackgroundColor(0,0,0)	
@@ -171,9 +171,5 @@ function game_quit()
 	unloadAll('poemgame')
 	collectgarbage()
 	collectgarbage()
-	if global_os == 'Horizon' then
-		love.quit()
-	else
-		love.event.quit()
-	end
+	love.event.quit()
 end

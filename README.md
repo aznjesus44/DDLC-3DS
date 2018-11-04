@@ -27,6 +27,6 @@ New 3DS/2DS users should disable L2 Cache before playing this. (?)
 
 - CIA - Install the .cia file from the [releases](https://github.com/LukeZGD/DDLC-3DS/releases) using any CIA installer of your choice.
 
-- PC - Drag the game folder to LÖVE 0.10.2 / 11.1
+- PC - Drag the game folder to LÖVE 11.1
 
 **Credits to TurtleP for LovePotion!**

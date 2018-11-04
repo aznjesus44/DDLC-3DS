@@ -127,8 +127,6 @@ function menu_draw()
 			
 		elseif menu_type == 'settings2' then
 			lg.print(settings.textloc..' Screen',140, 45)
-			lg.print(settings.dtym,140, 70)
-			lg.print(settings.animh, 140, 95)
 		end
 		lg.print('Press (<) and (>) to change settings.',16,188)
 		lg.print('DDLC-3DS '..dversion..' '..dvertype,16, 203)
@@ -144,9 +142,6 @@ function menu_draw()
 			end
 			--lg.rectangle('fill',95,25+(25*i),6,6)
 		end
-		
-	elseif menu_type == 'choice' then
-		if settings.dtym == 1 then drawdatetime() end
 		
 	elseif menu_type == 'help' then
 		lg.setColor(255,189,225)
@@ -241,7 +236,7 @@ function menu_confirm()
 	
 	elseif menu_type == 'pause' or menu_type == 'pause2' then --pause menu options
 		menu_previous = menu_type
-		if m_selected <= 5 and menu_type == 'pause' then
+		if m_selected <= 6 and menu_type == 'pause' then
 			if m_selected == 2 then
 				menu_history = {cl,ct}
 				menu_enable('history')
@@ -257,7 +252,7 @@ function menu_confirm()
 				pagenum = 1
 				menu_enable('settings')
 			end
-		elseif m_selected <= 5 and menu_type == 'pause2' then
+		elseif m_selected <= 6 and menu_type == 'pause2' then
 			if m_selected == 3 and chapter == 30 then
 				menutext = "There's no point in saving anymore.\nDon't worry, I'm not going anywhere."
 			elseif m_selected == 6 then
